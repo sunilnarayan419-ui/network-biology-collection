@@ -676,3 +676,58 @@ papers:
     scope: 实现可微的分组统计与逐通道仿射参数；提供标量基准、梯度检查和无需训练的合成实验。
     scope_en: Implement differentiable grouped moments and per-channel affine; scalar oracles, gradient checks and a training-free synthetic experiment are supplied.
     module_ids: [architecture/group_norm]
+  - id: scale-free-networks
+    category: community
+    number: 61
+    short_title: Scale-free Networks in Cell Biology
+    year: 2005
+    tags: [Network Biology, Degree Distribution]
+    summary: 用节点度和度分布等图概念描述细胞内的相互作用网络。
+    summary_en: "Describe cellular interaction networks with graph concepts such as node degree and the degree distribution."
+    scope: 实现节点度与稠密度分布，明确重复边、自环与孤立节点的约定；使用合成玩具网络。
+    scope_en: "Implement node degrees and a dense degree distribution with explicit rules for duplicate edges, self-loops and isolated nodes, on synthetic toy networks."
+    module_ids: [network_biology/degree_distribution]
+  - id: network-biology
+    category: community
+    number: 62
+    short_title: Network Biology
+    year: 2004
+    tags: [Network Biology, Centrality, Connected Components]
+    summary: 用网络度量描述细胞功能组织，包括节点连接与整体结构。
+    summary_en: "Describe the functional organization of the cell with network measures of node connectivity and overall structure."
+    scope: 实现度中心性与介数中心性的候选枢纽排名，以及连通分量与最大连通分量；中心性不等于必需性。
+    scope_en: "Implement degree and betweenness centrality for candidate-hub ranking, plus connected components and the largest component; centrality is not essentiality."
+    module_ids: [network_biology/hubs_centrality, network_biology/connected_components]
+  - id: incomplete-interactome
+    category: community
+    number: 63
+    short_title: Incomplete Interactome
+    year: 2015
+    tags: [Network Medicine, Shortest Paths]
+    summary: 在不完整的互作组中，用网络位置与距离考察疾病相关蛋白之间的关系。
+    summary_en: "Use network location and distance in an incomplete interactome to relate disease-associated proteins."
+    scope: 实现无权图上的单源距离与字典序最小的最短路径；路径长度只是邻近性假设，不实现论文的模块分离度量。
+    scope_en: "Implement unweighted single-source distances and lexicographically smallest shortest paths; path length is only a proximity hypothesis and the paper's separation measure is not implemented."
+    module_ids: [network_biology/shortest_paths]
+  - id: network-motifs
+    category: community
+    number: 64
+    short_title: Network Motifs
+    year: 2002
+    tags: [Network Biology, Network Motifs, Gene Regulation]
+    summary: 把在网络中出现次数远高于随机网络的小型互连模式定义为网络模体。
+    summary_en: "Define network motifs as small interconnection patterns that occur far more often than in randomized networks."
+    scope: 在有向调控网络中检测前馈环，区分诱导与非诱导匹配；配套随机化实验只比较计数。
+    scope_en: "Detect feed-forward loops in a directed regulatory network with induced and non-induced matching; the supplied randomization experiment only compares counts."
+    module_ids: [network_biology/feed_forward_loops]
+  - id: hierarchical-modularity
+    category: community
+    number: 65
+    short_title: Hierarchical Modularity
+    year: 2002
+    tags: [Network Biology, Community Detection, Metabolic Networks]
+    summary: 研究代谢网络中由紧密连接的节点构成的模块及其层次组织。
+    summary_en: "Study modules of densely connected nodes in metabolic networks and how they are organized hierarchically."
+    scope: 实现模块度与确定性的贪心社区发现（含分辨率参数）；通用教学算法，不是论文自己的流程，结果不等于已验证的通路。
+    scope_en: "Implement modularity and deterministic greedy community detection with a resolution parameter; a generic teaching algorithm rather than the paper's own procedure, and results are not validated pathways."
+    module_ids: [network_biology/community_modules]
