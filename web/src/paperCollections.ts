@@ -82,6 +82,14 @@ export const paperCollections: PaperCollection[] = [
     description_en: "Visual features · Multiscale generation",
     paperIds: ["clip", "simclr", "moco", "rotation-trick", "var", "repa", "drifting", "fd-loss"],
   },
+  {
+    id: "network-biology",
+    name: "网络生物学",
+    name_en: "Network Biology",
+    description: "度与中心性 · 连通性 · 最短路径 · 模体 · 社区",
+    description_en: "Degree & centrality · Connectivity · Shortest paths · Motifs · Communities",
+    paperIds: ["scale-free-networks", "network-biology", "incomplete-interactome", "network-motifs", "hierarchical-modularity"],
+  },
 ];
 
 export function papersInCollection(papers: Paper[], collection?: PaperCollection): Paper[] {
